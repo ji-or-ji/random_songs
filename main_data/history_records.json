@@ -10,5 +10,29 @@
     "action": "随机点歌",
     "details": "歌曲: 游园会 - 歌手: ",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-08-31 14:35:25",
+    "action": "添加点歌人",
+    "details": "点歌人: 陈星彤",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-08-31 14:36:22",
+    "action": "添加歌曲",
+    "details": "歌曲: 姐姐真漂亮 - 歌手: 时代少年团 - 点歌人: 陈星彤",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-08-31 14:38:11",
+    "action": "添加歌曲",
+    "details": "歌曲: IF YOU - 歌手: BIGBANG - 点歌人: 陈星彤",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-08-31 14:39:22",
+    "action": "添加歌曲",
+    "details": "歌曲: 心动(beautiful) - 歌手: 伯贤 - 点歌人: 陈星彤",
+    "result": "成功"
   }
 ]
