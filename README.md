@@ -48,7 +48,7 @@
    ```
    random_songs/
    ├── main_data/
-   │   ├── nain.py          # 主程序
+   │   ├── main.py          # 主程序
    │   └── history_records.json  # 历史记录文件
    ├── songs_list.json      # 歌曲数据文件
    └── README.md           # 说明文档
