@@ -34,5 +34,275 @@
     "action": "添加歌曲",
     "details": "歌曲: 心动(beautiful) - 歌手: 伯贤 - 点歌人: 陈星彤",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 13:58:24",
+    "action": "查看歌单",
+    "details": "查看所有歌单信息，共1个歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:00:51",
+    "action": "创建歌单",
+    "details": "歌单名称: 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:00:57",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:01:05",
+    "action": "随机点歌",
+    "details": "歌曲: Du-du-du - 歌手: BLACKPINK",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:15",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:15",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:16",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:16",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:17",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:17",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:17",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:18",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:18",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:19",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:19",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:20",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:20",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:02:20",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:10:01",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:10:04",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:20",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:21",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:21",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:22",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:22",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:23",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:23:42",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:27",
+    "action": "自动跳转设置",
+    "details": "启用自动网页跳转",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:34",
+    "action": "跳转模式设置",
+    "details": "设置为搜索跳转模式",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:38",
+    "action": "跳转延时设置",
+    "details": "设置跳转延时为 3秒",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:46",
+    "action": "随机点歌",
+    "details": "歌曲: Du-du-du - 歌手: BLACKPINK",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:49",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Du-du-du BLACKPINK",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:44:59",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:45:02",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:52:38",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:52:44",
+    "action": "随机点歌",
+    "details": "歌曲: 英雄 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:52:47",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 英雄",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:56:35",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:56:41",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:58:12",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:58:38",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:58:48",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:58:51",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 14:59:31",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 15:07:53",
+    "action": "查看歌单",
+    "details": "查看所有歌单信息，共2个歌单",
+    "result": "成功"
   }
 ]
