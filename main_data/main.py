@@ -1299,8 +1299,13 @@ def import_external_playlist():
         while playlist_id in config['playlists']:
             playlist_id = f"playlist_{len(config['playlists']) + 1}"
         
-        # 创建歌单文件路径
-        file_path = f"main_data/{playlist_id}.json"
+        # 创建歌单文件路径 - 使用基于脚本目录的绝对路径
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        main_data_dir = os.path.join(os.path.dirname(script_dir), 'main_data')
+        file_path = os.path.join(main_data_dir, f"{playlist_id}.json")
+        
+        # 确保main_data目录存在
+        os.makedirs(main_data_dir, exist_ok=True)
         
         # 保存导入的歌曲到新歌单
         try:
@@ -1310,11 +1315,11 @@ def import_external_playlist():
             print(f"创建歌单文件失败: {e}")
             return
         
-        # 添加到配置
+        # 添加到配置 - 使用相对路径存储
         config['playlists'][playlist_id] = {
             'name': playlist_name,
             'description': playlist_description,
-            'file_path': file_path,
+            'file_path': f"main_data/{playlist_id}.json",
             'created_at': datetime.datetime.now().strftime("%Y/%m/%d"),
             'song_count': len(external_songs)
         }
