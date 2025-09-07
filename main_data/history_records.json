@@ -880,5 +880,11 @@
     "action": "修改歌曲",
     "details": "修改歌手:  -> 朴树",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 11:54:15",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
   }
 ]

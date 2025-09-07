@@ -145,9 +145,27 @@ def load_playlist_config():
 
 def save_playlist_config(config):
     """保存歌单配置文件"""
-    config_path = 'main_data/playlists_config.json'
+    # 使用与load_playlist_config相同的路径解析逻辑
+    config_paths = [
+        'playlists_config.json',
+        '../playlists_config.json',
+        './main_data/playlists_config.json',
+        'main_data/playlists_config.json'
+    ]
+    
+    # 尝试在所有可能的路径中保存
+    for config_path in config_paths:
+        try:
+            with open(config_path, 'w', encoding='utf-8') as f:
+                json.dump(config, f, ensure_ascii=False, indent=2)
+            return True
+        except Exception as e:
+            # 如果这个路径失败，继续尝试下一个
+            continue
+    
+    # 如果所有路径都失败，尝试在当前目录创建
     try:
-        with open(config_path, 'w', encoding='utf-8') as f:
+        with open('playlists_config.json', 'w', encoding='utf-8') as f:
             json.dump(config, f, ensure_ascii=False, indent=2)
         return True
     except Exception as e:
