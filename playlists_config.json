@@ -1,0 +1,51 @@
+{
+  "current_playlist": "playlist_2",
+  "playlists": {
+    "default": {
+      "name": "默认歌单",
+      "description": "主歌单",
+      "file_path": "main_data/songs_list.json",
+      "created_at": "2025/09/06",
+      "song_count": 60,
+      "duplicate_prevention": {
+        "enabled": true,
+        "mode": "time_window",
+        "time_window_hours": 1,
+        "time_window_minutes": 0,
+        "reset_on_all_played": true,
+        "last_reset_time": "2025-09-07 09:43:44",
+        "played_songs": []
+      }
+    },
+    "playlist_2": {
+      "name": "内定qwb",
+      "description": "just_for_play",
+      "file_path": "main_data/playlist_2.json",
+      "created_at": "2025/09/06",
+      "song_count": 1,
+      "duplicate_prevention": {
+        "enabled": true,
+        "mode": "time_window",
+        "time_window_hours": 1,
+        "time_window_minutes": 0,
+        "reset_on_all_played": true,
+        "last_reset_time": "2025-09-07 09:42:39",
+        "played_songs": []
+      }
+    },
+    "playlist_3": {
+      "name": "测试导入歌单",
+      "description": "测试导入的歌单",
+      "file_path": "main_data/playlist_3.json",
+      "created_at": "2025/09/07",
+      "song_count": 2
+    },
+    "playlist_4": {
+      "name": "qwb",
+      "description": "qwb",
+      "file_path": "main_data/playlist_4.json",
+      "created_at": "2025/09/07",
+      "song_count": 2
+    }
+  }
+}

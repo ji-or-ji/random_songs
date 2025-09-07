@@ -886,5 +886,17 @@
     "action": "切换歌单",
     "details": "从 内定qwb 切换到 内定qwb",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:02:51",
+    "action": "导入外部歌单",
+    "details": "歌单名称: 测试导入歌单 - 歌曲数量: 2 - 来源文件: test_external_playlist.json",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:04:20",
+    "action": "导入外部歌单",
+    "details": "歌单名称: qwb - 歌曲数量: 2 - 来源文件: C:\\\\Users\\\\A\\\\Desktop\\\\新建 文本文档 (2).json",
+    "result": "成功"
   }
 ]
