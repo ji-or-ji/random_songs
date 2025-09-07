@@ -976,5 +976,35 @@
     "action": "网页跳转",
     "details": "跳转到B站搜索: 兰亭序 周杰伦",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:17:05",
+    "action": "随机点歌",
+    "details": "歌曲: 影色舞 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:17:08",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 影色舞",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:17:33",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:17:36",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 13:17:39",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
   }
 ]

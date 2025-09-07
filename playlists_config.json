@@ -1,5 +1,5 @@
 {
-  "current_playlist": "default",
+  "current_playlist": "playlist_2",
   "playlists": {
     "default": {
       "name": "默认歌单",
@@ -39,6 +39,11 @@
             "song_id": 45,
             "song_name": "兰亭序",
             "play_time": "2025-09-07 13:15:03"
+          },
+          {
+            "song_id": 19,
+            "song_name": "影色舞",
+            "play_time": "2025-09-07 13:17:05"
           }
         ]
       }
@@ -55,12 +60,12 @@
         "time_window_hours": 1,
         "time_window_minutes": 0,
         "reset_on_all_played": true,
-        "last_reset_time": "2025-09-07 09:42:39",
+        "last_reset_time": "2025-09-07 13:17:36",
         "played_songs": [
           {
             "song_id": 1,
             "song_name": "TianTian",
-            "play_time": "2025-09-07 13:13:56"
+            "play_time": "2025-09-07 13:17:36"
           }
         ]
       }
