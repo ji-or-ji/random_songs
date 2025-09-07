@@ -304,5 +304,581 @@
     "action": "查看歌单",
     "details": "查看所有歌单信息，共2个歌单",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:25:45",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:05",
+    "action": "随机点歌",
+    "details": "歌曲: 春风吹 - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:08",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 春风吹 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:18",
+    "action": "随机点歌",
+    "details": "歌曲: Yesterday Once More - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:21",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Yesterday Once More",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:27",
+    "action": "随机点歌",
+    "details": "歌曲: 搁浅 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:27:30",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 搁浅",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:29:50",
+    "action": "防重复设置",
+    "details": "手动重置播放记录",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:02",
+    "action": "随机点歌",
+    "details": "歌曲: 夜间飞行 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:05",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 夜间飞行",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:10",
+    "action": "随机点歌",
+    "details": "歌曲: 游园会 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:13",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 游园会",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:18",
+    "action": "随机点歌",
+    "details": "歌曲: wonderfui u - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:21",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: wonderfui u",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:26",
+    "action": "随机点歌",
+    "details": "歌曲: IF YOU - 歌手: BIGBANG",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:29",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: IF YOU BIGBANG",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:34",
+    "action": "随机点歌",
+    "details": "歌曲: 爱在西元前 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:37",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱在西元前 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:42",
+    "action": "随机点歌",
+    "details": "歌曲: 雑踏、僕5の街 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:30:45",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 雑踏、僕5の街",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:31:23",
+    "action": "防重复设置",
+    "details": "设置防重复模式",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:34:45",
+    "action": "防重复设置",
+    "details": "关闭防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:34:46",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:34:48",
+    "action": "防重复设置",
+    "details": "设置防重复模式",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:34:55",
+    "action": "防重复设置",
+    "details": "设置防重复模式",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:35:05",
+    "action": "防重复设置",
+    "details": "设置时间窗口: 2小时59分钟",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:36:19",
+    "action": "防重复设置",
+    "details": "设置时间窗口: 1小时0分钟",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:36:22",
+    "action": "防重复设置",
+    "details": "关闭所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:36:23",
+    "action": "防重复设置",
+    "details": "启用所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:36:24",
+    "action": "防重复设置",
+    "details": "关闭所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:36:25",
+    "action": "防重复设置",
+    "details": "启用所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:37:08",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:37:28",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:37:37",
+    "action": "随机点歌",
+    "details": "歌曲: 半句再见 - 歌手: 孙燕姿",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:37:40",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 半句再见 孙燕姿",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:38:04",
+    "action": "随机点歌",
+    "details": "歌曲: 爱我还是爱他 - 歌手: 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:38:07",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱我还是爱他 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:38:28",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:38:53",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:38:56",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:39:04",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 16:39:07",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:27",
+    "action": "随机点歌",
+    "details": "歌曲: 夜间飞行 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:30",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 夜间飞行",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:34",
+    "action": "随机点歌",
+    "details": "歌曲: 春风吹 - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:37",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 春风吹 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:42",
+    "action": "随机点歌",
+    "details": "歌曲: 夜航星 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:58:45",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 夜航星",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:00",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:11",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:14",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:18",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:21",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:31",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:32",
+    "action": "随机点歌",
+    "details": "歌曲: 普通女孩 - 歌手: 沙一汀EL",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:35",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 普通女孩 沙一汀EL",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:42",
+    "action": "随机点歌",
+    "details": "歌曲: 想自由 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 19:59:45",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 想自由",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 20:04:01",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> https://www.bilibili.com/video/BV1vE411K78u/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-06 20:04:50",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> https://www.bilibili.com/video/BV18T421k7uV/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:07",
+    "action": "随机点歌",
+    "details": "歌曲: IF YOU - 歌手: BIGBANG",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:10",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: IF YOU BIGBANG",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:28",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:31",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:34",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:40",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:43",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:47",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:37:50",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:00",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:02",
+    "action": "随机点歌",
+    "details": "歌曲: 想自由 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:05",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 想自由",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:10",
+    "action": "随机点歌",
+    "details": "歌曲: 影色舞 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:13",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 影色舞",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:18",
+    "action": "随机点歌",
+    "details": "歌曲: 江南 - 歌手: 林俊杰",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:21",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 江南 林俊杰",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:38:56",
+    "action": "随机点歌",
+    "details": "歌曲: 兰亭序 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:39:00",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 兰亭序 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:41:28",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:20",
+    "action": "防重复设置",
+    "details": "关闭防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:21",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:21",
+    "action": "防重复设置",
+    "details": "关闭防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:22",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:23",
+    "action": "防重复设置",
+    "details": "关闭防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:23",
+    "action": "防重复设置",
+    "details": "启用防重复功能",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:26",
+    "action": "防重复设置",
+    "details": "关闭所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:27",
+    "action": "防重复设置",
+    "details": "启用所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:28",
+    "action": "防重复设置",
+    "details": "关闭所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:28",
+    "action": "防重复设置",
+    "details": "启用所有歌曲播放后重置",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:42:39",
+    "action": "防重复设置",
+    "details": "手动重置播放记录",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:43:03",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:43:21",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:43:30",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:43:44",
+    "action": "防重复设置",
+    "details": "手动重置播放记录",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:45:53",
+    "action": "修改歌曲",
+    "details": "修改歌手:  -> 我的三体-章北海传",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 09:46:56",
+    "action": "修改歌曲",
+    "details": "修改歌手:  -> 朴树",
+    "result": "成功"
   }
 ]

@@ -341,8 +341,8 @@ def filter_valid_songs(songs):
             valid_songs.append(song)
     return valid_songs
 
-def get_random_song(songs):
-    """随机选择一首歌曲"""
+def get_random_song_with_prevention(songs, playlist_id=None):
+    """带防重复功能的随机选择歌曲"""
     if not songs:
         return None
     
@@ -350,7 +350,81 @@ def get_random_song(songs):
     if not valid_songs:
         return None
     
-    return random.choice(valid_songs)
+    # 获取当前歌单的防重复配置
+    config = load_playlist_config()
+    if playlist_id:
+        playlist_config = config['playlists'].get(playlist_id)
+    else:
+        playlist_config = config['playlists'].get(config['current_playlist'])
+    
+    if not playlist_config or not playlist_config['duplicate_prevention']['enabled']:
+        # 防重复功能未启用，直接随机选择
+        return random.choice(valid_songs)
+    
+    prevention_config = playlist_config['duplicate_prevention']
+    
+    # 检查是否需要重置播放记录
+    if prevention_config['reset_on_all_played']:
+        current_time = datetime.datetime.now()
+        last_reset_time = prevention_config.get('last_reset_time')
+        
+        # 如果所有歌曲都已播放过，或者从未重置过，则重置
+        played_count = len(prevention_config['played_songs'])
+        total_songs = len(valid_songs)
+        
+        if played_count >= total_songs or last_reset_time is None:
+            prevention_config['played_songs'] = []
+            prevention_config['last_reset_time'] = current_time.strftime("%Y-%m-%d %H:%M:%S")
+            save_playlist_config(config)
+    
+    # 获取时间窗口内的已播放歌曲
+    played_songs_in_window = []
+    if prevention_config['mode'] == 'time_window':
+        time_window_hours = prevention_config['time_window_hours']
+        time_window_minutes = prevention_config['time_window_minutes']
+        time_window_seconds = time_window_hours * 3600 + time_window_minutes * 60
+        
+        current_time = datetime.datetime.now()
+        for song_info in prevention_config['played_songs']:
+            play_time = datetime.datetime.strptime(song_info['play_time'], "%Y-%m-%d %H:%M:%S")
+            time_diff = (current_time - play_time).total_seconds()
+            
+            if time_diff <= time_window_seconds:
+                played_songs_in_window.append(song_info['song_id'])
+    
+    # 过滤出未在时间窗口内播放过的歌曲
+    available_songs = [song for song in valid_songs 
+                      if song.get('id') not in played_songs_in_window]
+    
+    if not available_songs:
+        # 所有歌曲都在时间窗口内播放过，根据配置决定是否重置
+        if prevention_config['reset_on_all_played']:
+            prevention_config['played_songs'] = []
+            prevention_config['last_reset_time'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            save_playlist_config(config)
+            available_songs = valid_songs
+        else:
+            # 不重置，返回None表示无可用歌曲
+            return None
+    
+    # 随机选择一首歌曲
+    selected_song = random.choice(available_songs)
+    
+    # 记录播放历史
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    prevention_config['played_songs'].append({
+        'song_id': selected_song.get('id'),
+        'song_name': selected_song.get('song_name', '未知'),
+        'play_time': current_time
+    })
+    
+    save_playlist_config(config)
+    
+    return selected_song
+
+def get_random_song(songs):
+    """随机选择一首歌曲（兼容旧版本）"""
+    return get_random_song_with_prevention(songs)
 
 def display_song_info(song):
     """显示歌曲信息"""
@@ -827,7 +901,7 @@ def switch_playlist():
     
     if len(playlists) <= 1:
         print("当前只有一个歌单，无法切换")
-        return config
+        return config, None
     
     print("\n🎵 歌单切换 🎵")
     print("=" * 20)
@@ -846,7 +920,7 @@ def switch_playlist():
             
             if selected_playlist_id == config['current_playlist']:
                 print("已经是当前歌单!")
-                return config
+                return config, None
             
             config['current_playlist'] = selected_playlist_id
             if save_playlist_config(config):
@@ -859,6 +933,7 @@ def switch_playlist():
                 print("歌曲列表重新加载成功!")
                 stats = get_songs_statistics(songs)
                 display_statistics(stats)
+                return config, songs
             else:
                 print("保存配置失败!")
         else:
@@ -866,13 +941,13 @@ def switch_playlist():
     except ValueError:
         print("请输入有效的数字!")
     
-    return config
+    return config, None
 
 def create_playlist():
-    """创建新歌单"""
+    """创建空白歌单"""
     config = load_playlist_config()
     
-    print("\n🎵 创建新歌单 🎵")
+    print("\n🎵 创建空白歌单 🎵")
     print("=" * 20)
     
     playlist_name = input("请输入歌单名称: ").strip()
@@ -1011,18 +1086,26 @@ def settings_menu():
         print("=" * 30)
         print("1. 歌单管理")
         print("2. 自动网页跳转开关")
-        print("3. 返回主菜单")
+        print("3. 防重复功能设置")
+        print("4. 返回主菜单")
         
-        choice = input("请输入选项 (1-3): ").strip()
+        choice = input("请输入选项 (1-4): ").strip()
         
         if choice == '1':
-            playlist_management_menu()
+            new_songs = playlist_management_menu()
+            if new_songs is not None:
+                # 返回新的歌曲列表给调用者
+                return new_songs
         elif choice == '2':
             auto_jump_settings_menu()
         elif choice == '3':
+            duplicate_prevention_settings_menu()
+        elif choice == '4':
             break
         else:
             print("无效选项，请重新选择!")
+    
+    return None
 
 def auto_jump_settings_menu():
     """自动网页跳转设置菜单"""
@@ -1144,31 +1227,249 @@ def set_jump_delay():
     except ValueError:
         print("请输入有效的数字!")
 
+def import_external_playlist():
+    """从外部已有歌单导入"""
+    print("\n🎵 从外部已有歌单导入 🎵")
+    print("=" * 25)
+    
+    # 获取外部歌单文件路径
+    external_file_path = input("请输入外部歌单文件路径 (支持JSON格式): ").strip()
+    if not external_file_path:
+        print("文件路径不能为空!")
+        return
+    
+    # 检查文件是否存在
+    if not os.path.exists(external_file_path):
+        print(f"文件不存在: {external_file_path}")
+        return
+    
+    try:
+        # 读取外部歌单文件
+        with open(external_file_path, 'r', encoding='utf-8') as f:
+            external_data = json.load(f)
+        
+        # 检查文件格式
+        if 'songs' not in external_data:
+            print("文件格式错误: 缺少 'songs' 字段")
+            return
+        
+        external_songs = external_data['songs']
+        if not isinstance(external_songs, list):
+            print("文件格式错误: 'songs' 字段应该是一个列表")
+            return
+        
+        print(f"成功读取外部歌单，共 {len(external_songs)} 首歌曲")
+        
+        # 创建新歌单
+        config = load_playlist_config()
+        
+        playlist_name = input("请输入新歌单名称: ").strip()
+        if not playlist_name:
+            print("歌单名称不能为空!")
+            return
+        
+        # 检查名称是否已存在
+        for playlist_info in config['playlists'].values():
+            if playlist_info['name'] == playlist_name:
+                print("歌单名称已存在!")
+                return
+        
+        playlist_description = input("请输入歌单描述 (可选): ").strip()
+        
+        # 生成唯一的歌单ID
+        playlist_id = f"playlist_{len(config['playlists']) + 1}"
+        while playlist_id in config['playlists']:
+            playlist_id = f"playlist_{len(config['playlists']) + 1}"
+        
+        # 创建歌单文件路径
+        file_path = f"main_data/{playlist_id}.json"
+        
+        # 保存导入的歌曲到新歌单
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump({'songs': external_songs}, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"创建歌单文件失败: {e}")
+            return
+        
+        # 添加到配置
+        config['playlists'][playlist_id] = {
+            'name': playlist_name,
+            'description': playlist_description,
+            'file_path': file_path,
+            'created_at': datetime.datetime.now().strftime("%Y/%m/%d"),
+            'song_count': len(external_songs)
+        }
+        
+        if save_playlist_config(config):
+            print(f"✅ 成功导入外部歌单: {playlist_name} ({len(external_songs)}首歌曲)")
+            # 记录历史
+            record_history("导入外部歌单", f"歌单名称: {playlist_name} - 歌曲数量: {len(external_songs)} - 来源文件: {external_file_path}")
+        else:
+            print("保存配置失败!")
+            
+    except json.JSONDecodeError:
+        print("文件格式错误: 不是有效的JSON文件")
+    except Exception as e:
+        print(f"导入失败: {e}")
+
+def duplicate_prevention_settings_menu():
+    """防重复功能设置菜单"""
+    config = load_playlist_config()
+    current_playlist_id = config['current_playlist']
+    prevention_config = config['playlists'][current_playlist_id]['duplicate_prevention']
+    
+    while True:
+        status = "✅ 启用" if prevention_config['enabled'] else "❌ 关闭"
+        mode = "⏰ 时间窗口模式" if prevention_config['mode'] == 'time_window' else "❓ 未知模式"
+        time_window = f"{prevention_config['time_window_hours']}小时{prevention_config['time_window_minutes']}分钟"
+        reset_status = "✅ 是" if prevention_config['reset_on_all_played'] else "❌ 否"
+        played_count = len(prevention_config['played_songs'])
+        
+        print(f"\n🔄 防重复功能设置 🔄 (当前歌单: {config['playlists'][current_playlist_id]['name']})")
+        print("=" * 50)
+        print(f"1. 功能状态: {status}")
+        print(f"2. 模式: {mode}")
+        print(f"3. 时间窗口: {time_window}")
+        print(f"4. 所有歌曲播放后重置: {reset_status}")
+        print(f"5. 当前已播放歌曲: {played_count}首")
+        print(f"6. 查看播放记录")
+        print(f"7. 手动重置播放记录")
+        print(f"8. 返回设置菜单")
+        print("输入相应数字以显示更多信息/操作")
+        
+        choice = input("\n请选择操作 (1-8): ").strip()
+        
+        if choice == '1':
+            # 切换启用状态
+            prevention_config['enabled'] = not prevention_config['enabled']
+            if save_playlist_config(config):
+                status = "启用" if prevention_config['enabled'] else "关闭"
+                print(f"✅ 防重复功能已{status}")
+                record_history("防重复设置", f"{status}防重复功能")
+            else:
+                print("保存配置失败!")
+                
+        elif choice == '2':
+            # 切换模式
+            if prevention_config['mode'] == 'time_window':
+                prevention_config['mode'] = 'time_window'  # 目前只有一种模式
+                print("当前只有时间窗口模式可用")
+            else:
+                prevention_config['mode'] = 'time_window'
+                print("已设置为时间窗口模式")
+            
+            if save_playlist_config(config):
+                record_history("防重复设置", "设置防重复模式")
+                
+        elif choice == '3':
+            # 设置时间窗口
+            print(f"\n⏰ 当前时间窗口: {prevention_config['time_window_hours']}小时{prevention_config['time_window_minutes']}分钟")
+            print("请输入新的时间窗口设置:")
+            
+            try:
+                hours = int(input("小时 (0-24): ").strip())
+                minutes = int(input("分钟 (0-59): ").strip())
+                
+                if 0 <= hours <= 24 and 0 <= minutes <= 59:
+                    prevention_config['time_window_hours'] = hours
+                    prevention_config['time_window_minutes'] = minutes
+                    
+                    if save_playlist_config(config):
+                        print(f"✅ 时间窗口已设置为 {hours}小时{minutes}分钟")
+                        record_history("防重复设置", f"设置时间窗口: {hours}小时{minutes}分钟")
+                    else:
+                        print("保存配置失败!")
+                else:
+                    print("时间范围无效! 小时: 0-24, 分钟: 0-59")
+            except ValueError:
+                print("请输入有效的数字!")
+                
+        elif choice == '4':
+            # 切换重置设置
+            prevention_config['reset_on_all_played'] = not prevention_config['reset_on_all_played']
+            if save_playlist_config(config):
+                status = "启用" if prevention_config['reset_on_all_played'] else "关闭"
+                print(f"✅ 所有歌曲播放后重置已{status}")
+                record_history("防重复设置", f"{status}所有歌曲播放后重置")
+            else:
+                print("保存配置失败!")
+                
+        elif choice == '5':
+            # 显示当前播放统计
+            songs = load_songs()
+            total_songs = len(filter_valid_songs(songs))
+            played_count = len(prevention_config['played_songs'])
+            print(f"\n📊 播放统计:")
+            print(f"总歌曲数: {total_songs}")
+            print(f"已播放歌曲: {played_count}")
+            print(f"剩余歌曲: {total_songs - played_count}")
+            
+        elif choice == '6':
+            # 查看播放记录
+            if not prevention_config['played_songs']:
+                print("暂无播放记录")
+            else:
+                print("\n📜 播放记录:")
+                print("=" * 60)
+                for i, record in enumerate(prevention_config['played_songs'][-10:], 1):  # 显示最近10条
+                    print(f"{i}. [{record['play_time']}] {record['song_name']} (ID: {record['song_id']})")
+                if len(prevention_config['played_songs']) > 10:
+                    print(f"... 还有 {len(prevention_config['played_songs']) - 10} 条记录")
+                    
+        elif choice == '7':
+            # 手动重置播放记录
+            confirm = input("确定要手动重置播放记录吗? 这将清除所有播放历史! (y/N): ").strip().lower()
+            if confirm == 'y':
+                prevention_config['played_songs'] = []
+                prevention_config['last_reset_time'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                if save_playlist_config(config):
+                    print("✅ 播放记录已重置")
+                    record_history("防重复设置", "手动重置播放记录")
+                else:
+                    print("保存配置失败!")
+            else:
+                print("取消重置")
+                
+        elif choice == '8':
+            break
+            
+        else:
+            print("无效选项，请重新选择!")
+
 def playlist_management_menu():
     """歌单管理菜单"""
     while True:
         print("\n🎵 歌单管理 🎵")
         print("=" * 15)
-        print("1. 创建新歌单")
-        print("2. 删除歌单")
-        print("3. 切换歌单")
-        print("4. 查看所有歌单")
-        print("5. 返回设置菜单")
+        print("1. 从外部已有歌单导入")
+        print("2. 创建空白歌单")
+        print("3. 删除歌单")
+        print("4. 切换歌单")
+        print("5. 查看所有歌单")
+        print("6. 返回设置菜单")
         
-        choice = input("请输入选项 (1-5): ").strip()
+        choice = input("请输入选项 (1-6): ").strip()
         
         if choice == '1':
-            create_playlist()
+            import_external_playlist()
         elif choice == '2':
-            delete_playlist()
+            create_playlist()
         elif choice == '3':
-            switch_playlist()
+            delete_playlist()
         elif choice == '4':
-            view_playlists()
+            config, new_songs = switch_playlist()
+            if new_songs is not None:
+                # 返回新的歌曲列表给调用者
+                return new_songs
         elif choice == '5':
+            view_playlists()
+        elif choice == '6':
             break
         else:
             print("无效选项，请重新选择!")
+    
+    return None
 
 def main():
     """主函数"""
@@ -1224,7 +1525,12 @@ def main():
             view_history()
             
         elif choice == '7':
-            settings_menu()
+            new_songs = settings_menu()
+            if new_songs is not None:
+                songs = new_songs
+                print("歌单已切换，歌曲列表已更新!")
+                stats = get_songs_statistics(songs)
+                display_statistics(stats)
             
         elif choice == '8':
             print("天空属于哈夫克~！")
