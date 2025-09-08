@@ -49,6 +49,13 @@
           }
         ]
       }
+    },
+    "playlist_3": {
+      "name": "play-list",
+      "description": "只是为了好玩",
+      "file_path": "main_data/playlist_3.json",
+      "created_at": "2025/09/09",
+      "song_count": 60
     }
   }
 }

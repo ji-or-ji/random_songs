@@ -1114,5 +1114,23 @@
     "action": "网页跳转",
     "details": "跳转到B站搜索: Yesterday Once More",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-09 06:21:19",
+    "action": "导入外部歌单",
+    "details": "歌单名称: play-list - 歌曲数量: 60 - 来源文件: D:\\\\random_songs\\\\main_data\\\\songs_list.json",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-09 06:21:30",
+    "action": "切换歌单",
+    "details": "从 play-list 切换到 play-list",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-09 06:22:42",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
   }
 ]
