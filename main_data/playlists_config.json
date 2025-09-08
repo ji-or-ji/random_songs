@@ -1,5 +1,5 @@
 {
-  "current_playlist": "playlist_2",
+  "current_playlist": "default",
   "playlists": {
     "default": {
       "name": "默认歌单",
@@ -10,11 +10,22 @@
       "duplicate_prevention": {
         "enabled": true,
         "mode": "time_window",
-        "time_window_hours": 1,
+        "time_window_hours": 3600,
         "time_window_minutes": 0,
         "reset_on_all_played": true,
-        "last_reset_time": "2025-09-07 09:43:44",
-        "played_songs": []
+        "last_reset_time": "2025-09-07 14:39:51",
+        "played_songs": [
+          {
+            "song_id": 48,
+            "song_name": "雨爱",
+            "play_time": "2025-09-07 16:56:03"
+          },
+          {
+            "song_id": 15,
+            "song_name": "Yesterday Once More",
+            "play_time": "2025-09-08 13:24:11"
+          }
+        ]
       }
     },
     "playlist_2": {
@@ -30,7 +41,13 @@
         "time_window_minutes": 0,
         "reset_on_all_played": true,
         "last_reset_time": "2025-09-07 09:42:39",
-        "played_songs": []
+        "played_songs": [
+          {
+            "song_id": 1,
+            "song_name": "TianTian",
+            "play_time": "2025-09-07 21:36:37"
+          }
+        ]
       }
     }
   }

@@ -1391,10 +1391,10 @@ def duplicate_prevention_settings_menu():
             print("请输入新的时间窗口设置:")
             
             try:
-                hours = int(input("小时 (0-24): ").strip())
+                hours = int(input("小时 (0-999999999): ").strip())
                 minutes = int(input("分钟 (0-59): ").strip())
                 
-                if 0 <= hours <= 24 and 0 <= minutes <= 59:
+                if 0 <= hours <= 999999999 and 0 <= minutes <= 59:
                     prevention_config['time_window_hours'] = hours
                     prevention_config['time_window_minutes'] = minutes
                     
@@ -1404,7 +1404,7 @@ def duplicate_prevention_settings_menu():
                     else:
                         print("保存配置失败!")
                 else:
-                    print("时间范围无效! 小时: 0-24, 分钟: 0-59")
+                    print("时间范围无效! 小时: 0-999999999, 分钟: 0-59")
             except ValueError:
                 print("请输入有效的数字!")
                 

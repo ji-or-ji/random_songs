@@ -1006,5 +1006,113 @@
     "action": "网页跳转",
     "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:38:49",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:38:55",
+    "action": "随机点歌",
+    "details": "歌曲: Love Song - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:38:59",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Love Song 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:39:20",
+    "action": "随机点歌",
+    "details": "歌曲: 雑踏、僕5の街 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:39:23",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 雑踏、僕5の街",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:39:36",
+    "action": "随机点歌",
+    "details": "歌曲: 爱我还是爱他 - 歌手: 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:39:39",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱我还是爱他 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 14:39:51",
+    "action": "防重复设置",
+    "details": "手动重置播放记录",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 16:56:03",
+    "action": "随机点歌",
+    "details": "歌曲: 雨爱 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 16:56:07",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 雨爱",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 16:56:57",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> https://www.bilibili.com/video/BV1FENSekE2V/?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 21:36:34",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 21:36:37",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 21:36:41",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-07 21:38:19",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-08 06:20:03",
+    "action": "防重复设置",
+    "details": "设置时间窗口: 3600小时0分钟",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-08 13:24:11",
+    "action": "随机点歌",
+    "details": "歌曲: Yesterday Once More - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-08 13:24:15",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Yesterday Once More",
+    "result": "成功"
   }
 ]
