@@ -4,14 +4,16 @@ def main():
 if __name__ == '__main__':
     main() 
 ###
-
-# 导入模块
+''''''
+### 导入模块
 import json
 import os
 import random
 import datetime
 import time
 import webbrowser
+###
+
 
 def record_history(action_type, action_details, result="成功"):
     """记录操作历史到文件"""
