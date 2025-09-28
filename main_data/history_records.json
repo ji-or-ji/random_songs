@@ -1198,5 +1198,245 @@
     "action": "网页跳转",
     "details": "跳转到B站搜索: 手写的从前",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-15 13:21:36",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-15 13:22:56",
+    "action": "随机点歌",
+    "details": "歌曲: 世界末日 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-15 13:23:00",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 世界末日",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-16 13:22:56",
+    "action": "随机点歌",
+    "details": "歌曲: 空白 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-16 13:23:00",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 空白",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-16 13:23:14",
+    "action": "随机点歌",
+    "details": "歌曲: wonderfui u - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-16 13:23:17",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: wonderfui u",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-17 13:22:55",
+    "action": "随机点歌",
+    "details": "歌曲: TianTian - 歌手: Mili_边狱巴士",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-17 13:22:58",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-18 13:23:05",
+    "action": "随机点歌",
+    "details": "歌曲: 倒带 - 歌手: 蔡依林",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-18 13:23:09",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 倒带 蔡依林",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-19 13:22:57",
+    "action": "随机点歌",
+    "details": "歌曲: All I want is you - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-19 13:23:08",
+    "action": "随机点歌",
+    "details": "歌曲: 晴天 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-19 13:23:12",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 晴天 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-22 13:23:10",
+    "action": "随机点歌",
+    "details": "歌曲: The way I still love you - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-22 13:23:20",
+    "action": "随机点歌",
+    "details": "歌曲: 半句再见 - 歌手: 孙燕姿",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-22 13:23:23",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 半句再见 孙燕姿",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-22 13:23:44",
+    "action": "随机点歌",
+    "details": "歌曲: 寂寞寂寞不好 - 歌手: 曹格",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-22 13:23:47",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 寂寞寂寞不好 曹格",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-23 13:23:19",
+    "action": "随机点歌",
+    "details": "歌曲: 雑踏、僕5の街 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-23 13:23:23",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 雑踏、僕5の街",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-23 13:25:34",
+    "action": "随机点歌",
+    "details": "歌曲: 遗失的心跳 - 歌手: 萧亚轩",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-23 13:25:45",
+    "action": "随机点歌",
+    "details": "歌曲: Love Song - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-23 13:25:48",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Love Song 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:22:55",
+    "action": "随机点歌",
+    "details": "歌曲: 英雄 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:22:58",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 英雄",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:23:12",
+    "action": "随机点歌",
+    "details": "歌曲: 可不可以 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:23:15",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 可不可以",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:23:20",
+    "action": "随机点歌",
+    "details": "歌曲: 长生咒 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-24 13:23:23",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 长生咒",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-26 13:23:00",
+    "action": "随机点歌",
+    "details": "歌曲: 爱在西元前 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-26 13:23:04",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱在西元前 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-27 13:23:06",
+    "action": "随机点歌",
+    "details": "歌曲: 江南 - 歌手: 林俊杰",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-27 13:23:23",
+    "action": "随机点歌",
+    "details": "歌曲: 暗号 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-27 13:23:30",
+    "action": "随机点歌",
+    "details": "歌曲: Payphone - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-27 13:23:34",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://b23.tv/Tp03YT8",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-28 13:23:33",
+    "action": "随机点歌",
+    "details": "歌曲: 姐姐真漂亮 - 歌手: 时代少年团",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-28 16:56:58",
+    "action": "修改歌曲",
+    "details": "修改歌名: 日月 -> 日月",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-28 16:59:12",
+    "action": "修改歌曲",
+    "details": "修改歌手: Mili_边狱巴士 -> RS纾律",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-28 16:59:35",
+    "action": "修改歌曲",
+    "details": "修改外链URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707 -> https://www.bilibili.com/bangumi/play/ep2206723?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
   }
 ]

@@ -1435,10 +1435,10 @@ def duplicate_prevention_settings_menu():
             else:
                 print("\n📜 播放记录:")
                 print("=" * 60)
-                for i, record in enumerate(prevention_config['played_songs'][-10:], 1):  # 显示最近10条
+                for i, record in enumerate(prevention_config['played_songs'][-50:], 1):  # 显示最近50条
                     print(f"{i}. [{record['play_time']}] {record['song_name']} (ID: {record['song_id']})")
-                if len(prevention_config['played_songs']) > 10:
-                    print(f"... 还有 {len(prevention_config['played_songs']) - 10} 条记录")
+                if len(prevention_config['played_songs']) > 50:
+                    print(f"... 还有 {len(prevention_config['played_songs']) - 50} 条记录")
                     
         elif choice == '7':
             # 手动重置播放记录
