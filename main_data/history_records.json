@@ -1438,5 +1438,455 @@
     "action": "修改歌曲",
     "details": "修改外链URL: https://www.bilibili.com/video/BV1ha7szJEeo/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707 -> https://www.bilibili.com/bangumi/play/ep2206723?spm_id_from=333.337.search-card.all.click",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-29 12:08:50",
+    "action": "删除歌曲",
+    "details": "歌曲: 日月 - 歌手: RS纾律 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-29 12:10:58",
+    "action": "添加歌曲",
+    "details": "歌曲: 日月 - 歌手: RS纾律 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-29 12:12:27",
+    "action": "添加歌曲",
+    "details": "歌曲: call of silence - 歌手: 未知 - 点歌人: 管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-29 12:13:32",
+    "action": "添加歌曲",
+    "details": "歌曲: one last kiss - 歌手: 未知 - 点歌人: 管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-29 13:23:17",
+    "action": "随机点歌",
+    "details": "歌曲: beautiful - 歌手: 艾米纳姆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 07:13:17",
+    "action": "添加歌曲",
+    "details": "歌曲: 夜色 - 歌手: 未知 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 07:16:22",
+    "action": "修改歌曲",
+    "details": "修改歌名: 被神明写的歌 -> 被神明写的歌",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 07:17:52",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> https://search.bilibili.com/all?keyword=%E8%A2%AB%E7%A5%9E%E6%98%8E%E5%86%99%E7%9A%84%E6%AD%8C&from_source=webtop_search&spm_id_from=333.1007&search_source=2",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 07:19:24",
+    "action": "修改歌曲",
+    "details": "修改歌名: 又活了一天 -> 又活了一天",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 13:20:35",
+    "action": "随机点歌",
+    "details": "歌曲: one last kiss - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-09-30 13:20:38",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: one last kiss",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-07 13:24:52",
+    "action": "随机点歌",
+    "details": "歌曲: 大风吹 - 歌手: 草东没有派对",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-07 13:24:56",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 大风吹 草东没有派对",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-07 21:37:38",
+    "action": "删除歌曲",
+    "details": "歌曲: 琵琶行 - 歌手:  - 点歌人: UK_LN_37",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-07 21:40:29",
+    "action": "添加歌曲",
+    "details": "歌曲: duevt - 歌手: 未知 - 点歌人: “37”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 13:23:12",
+    "action": "随机点歌",
+    "details": "歌曲: 夜航星 - 歌手: 我的三体-章北海传",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 13:23:16",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1vE411K78u/?spm_id_from=333.337.search-card.all.click&vd_source=d072175d0903750fa3ac60247437f707",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 21:36:15",
+    "action": "删除歌曲",
+    "details": "歌曲: 夜航星 - 歌手: 我的三体-章北海传 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 21:38:17",
+    "action": "添加歌曲",
+    "details": "歌曲: 黑暗森林 - 歌手: 雲翼星辰 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 21:39:19",
+    "action": "删除歌曲",
+    "details": "歌曲: beautiful - 歌手: 艾米纳姆 - 点歌人: 老半",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-08 21:43:31",
+    "action": "添加歌曲",
+    "details": "歌曲: attention - 歌手: 未知 - 点歌人: 老半",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-09 17:00:39",
+    "action": "添加歌曲",
+    "details": "歌曲: 烟花易冷 - 歌手: 周杰伦 - 点歌人: 徐钰晟",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-09 17:05:10",
+    "action": "添加歌曲",
+    "details": "歌曲: 不问别离 - 歌手: 未知 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-09 17:12:38",
+    "action": "添加歌曲",
+    "details": "歌曲: lovely - 歌手: 未知 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-11 13:25:19",
+    "action": "随机点歌",
+    "details": "歌曲: 又活了一天 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-11 13:25:23",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 又活了一天",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-11 13:28:56",
+    "action": "随机点歌",
+    "details": "歌曲: 爱我还是爱他 - 歌手: 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-11 13:28:59",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱我还是爱他 陶喆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-12 16:54:13",
+    "action": "添加歌曲",
+    "details": "歌曲: 没有如果 - 歌手: 未知 - 点歌人: 傅烁铭",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-13 13:23:02",
+    "action": "随机点歌",
+    "details": "歌曲: attention - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-13 13:23:05",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1Kw411y7DC/?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-14 13:23:32",
+    "action": "随机点歌",
+    "details": "歌曲: 兰亭序 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-14 13:23:35",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 兰亭序 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-15 13:23:09",
+    "action": "随机点歌",
+    "details": "歌曲: 日月 - 歌手: RS纾律",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-15 13:23:13",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/bangumi/play/ep2206723?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-15 17:14:43",
+    "action": "删除歌曲",
+    "details": "歌曲: 日月 - 歌手: RS纾律 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-15 17:15:02",
+    "action": "切换歌单",
+    "details": "从 内定qwb 切换到 内定qwb",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-15 17:15:54",
+    "action": "切换歌单",
+    "details": "从 默认歌单 切换到 默认歌单",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-16 13:22:46",
+    "action": "随机点歌",
+    "details": "歌曲: 红豆 - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-16 13:22:49",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 红豆 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-16 17:03:32",
+    "action": "添加歌曲",
+    "details": "歌曲: China-X - 歌手: 徐梦圆 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-16 17:04:54",
+    "action": "删除歌曲",
+    "details": "歌曲: 又活了一天 - 歌手:  - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-16 17:08:14",
+    "action": "添加歌曲",
+    "details": "歌曲: China-P - 歌手: 徐梦圆 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-17 13:22:41",
+    "action": "随机点歌",
+    "details": "歌曲: 没有如果 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-17 13:22:44",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1KFR4YcECP/?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-17 13:26:22",
+    "action": "随机点歌",
+    "details": "歌曲: 被神明写的歌 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-17 13:26:25",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://search.bilibili.com/all?keyword=%E8%A2%AB%E7%A5%9E%E6%98%8E%E5%86%99%E7%9A%84%E6%AD%8C&from_source=webtop_search&spm_id_from=333.1007&search_source=2",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-20 13:23:20",
+    "action": "随机点歌",
+    "details": "歌曲: 知我 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-20 13:23:24",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://b23.tv/9QpZX1u",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-20 16:59:39",
+    "action": "添加歌曲",
+    "details": "歌曲: 好汉歌 - 歌手: 未知 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-21 13:24:22",
+    "action": "随机点歌",
+    "details": "歌曲: 野火 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-21 13:24:25",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://m.bilibili.com/video/BV1vW4y157Hn",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-22 13:24:40",
+    "action": "随机点歌",
+    "details": "歌曲: 爱情讯息 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-22 13:24:43",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 爱情讯息",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-23 13:25:16",
+    "action": "随机点歌",
+    "details": "歌曲: Ditto - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-23 13:25:20",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Ditto",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-24 13:24:51",
+    "action": "随机点歌",
+    "details": "歌曲: 关键词 - 歌手: 林俊杰",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-24 13:24:54",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 关键词 林俊杰",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-25 08:17:12",
+    "action": "删除歌曲",
+    "details": "歌曲: one last kiss - 歌手:  - 点歌人: 管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-25 08:17:44",
+    "action": "添加歌曲",
+    "details": "歌曲: 主角 - 歌手: 未知 - 点歌人: 管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-28 13:23:56",
+    "action": "随机点歌",
+    "details": "歌曲: take my hand - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-28 13:24:00",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: take my hand",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-28 13:27:06",
+    "action": "随机点歌",
+    "details": "歌曲: Du-du-du - 歌手: BLACKPINK",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-28 13:27:09",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Du-du-du BLACKPINK",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-29 08:12:26",
+    "action": "修改歌曲",
+    "details": "修改歌手: 时代少年团 -> ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-29 13:24:31",
+    "action": "随机点歌",
+    "details": "歌曲: 游园会 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-29 13:24:35",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 游园会",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 13:22:52",
+    "action": "随机点歌",
+    "details": "歌曲: China-P - 歌手: 徐梦圆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 13:22:56",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: China-P 徐梦圆",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 14:13:25",
+    "action": "修改歌曲",
+    "details": "修改歌名: 弥渡山歌 -> 弥渡山歌",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 14:14:43",
+    "action": "修改歌曲",
+    "details": "修改歌手: 徐梦圆 -> ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:03:43",
+    "action": "删除歌曲",
+    "details": "歌曲: All I want is you - 歌手:  - 点歌人: 李康福",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:04:14",
+    "action": "删除歌曲",
+    "details": "歌曲: 空白 - 歌手:  - 点歌人: 李康福",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:06:54",
+    "action": "添加歌曲",
+    "details": "歌曲: unravel - 歌手: TK - 点歌人: PRANA",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:07:11",
+    "action": "删除歌曲",
+    "details": "歌曲: 姐姐真漂亮 - 歌手:  - 点歌人: 陈星彤",
+    "result": "成功"
   }
 ]

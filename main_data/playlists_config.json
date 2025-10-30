@@ -6,7 +6,7 @@
       "description": "主歌单",
       "file_path": "D:/random_songs/main_data/songs_list.json",
       "created_at": "2025/09/06",
-      "song_count": 61,
+      "song_count": 67,
       "duplicate_prevention": {
         "enabled": true,
         "mode": "time_window",
@@ -154,6 +154,111 @@
             "song_id": 58,
             "song_name": "姐姐真漂亮",
             "play_time": "2025-09-28 13:23:33"
+          },
+          {
+            "song_id": 12,
+            "song_name": "beautiful",
+            "play_time": "2025-09-29 13:23:17"
+          },
+          {
+            "song_id": 64,
+            "song_name": "one last kiss",
+            "play_time": "2025-09-30 13:20:35"
+          },
+          {
+            "song_id": 18,
+            "song_name": "大风吹",
+            "play_time": "2025-10-07 13:24:52"
+          },
+          {
+            "song_id": 5,
+            "song_name": "夜航星",
+            "play_time": "2025-10-08 13:23:12"
+          },
+          {
+            "song_id": 65,
+            "song_name": "又活了一天",
+            "play_time": "2025-10-11 13:25:19"
+          },
+          {
+            "song_id": 56,
+            "song_name": "爱我还是爱他",
+            "play_time": "2025-10-11 13:28:56"
+          },
+          {
+            "song_id": 68,
+            "song_name": "attention",
+            "play_time": "2025-10-13 13:23:02"
+          },
+          {
+            "song_id": 45,
+            "song_name": "兰亭序",
+            "play_time": "2025-10-14 13:23:32"
+          },
+          {
+            "song_id": 62,
+            "song_name": "日月",
+            "play_time": "2025-10-15 13:23:09"
+          },
+          {
+            "song_id": 33,
+            "song_name": "红豆",
+            "play_time": "2025-10-16 13:22:46"
+          },
+          {
+            "song_id": 72,
+            "song_name": "没有如果",
+            "play_time": "2025-10-17 13:22:41"
+          },
+          {
+            "song_id": 11,
+            "song_name": "被神明写的歌",
+            "play_time": "2025-10-17 13:26:22"
+          },
+          {
+            "song_id": 1,
+            "song_name": "知我",
+            "play_time": "2025-10-20 13:23:20"
+          },
+          {
+            "song_id": 2,
+            "song_name": "野火",
+            "play_time": "2025-10-21 13:24:22"
+          },
+          {
+            "song_id": 23,
+            "song_name": "爱情讯息",
+            "play_time": "2025-10-22 13:24:40"
+          },
+          {
+            "song_id": 52,
+            "song_name": "Ditto",
+            "play_time": "2025-10-23 13:25:16"
+          },
+          {
+            "song_id": 55,
+            "song_name": "关键词",
+            "play_time": "2025-10-24 13:24:51"
+          },
+          {
+            "song_id": 14,
+            "song_name": "take my hand",
+            "play_time": "2025-10-28 13:23:56"
+          },
+          {
+            "song_id": 44,
+            "song_name": "Du-du-du",
+            "play_time": "2025-10-28 13:27:05"
+          },
+          {
+            "song_id": 26,
+            "song_name": "游园会",
+            "play_time": "2025-10-29 13:24:31"
+          },
+          {
+            "song_id": 74,
+            "song_name": "China-P",
+            "play_time": "2025-10-30 13:22:52"
           }
         ]
       }
