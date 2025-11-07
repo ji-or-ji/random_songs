@@ -1888,5 +1888,107 @@
     "action": "删除歌曲",
     "details": "歌曲: 姐姐真漂亮 - 歌手:  - 点歌人: 陈星彤",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:14:16",
+    "action": "删除歌曲",
+    "details": "歌曲: 弥渡山歌 - 歌手:  - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-10-30 17:17:41",
+    "action": "添加歌曲",
+    "details": "歌曲: 断剑神曲 - 歌手: 未知 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-03 13:26:18",
+    "action": "随机点歌",
+    "details": "歌曲: 主角 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-03 13:26:22",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 主角",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-04 13:23:42",
+    "action": "随机点歌",
+    "details": "歌曲: 麦恩莉 - 歌手: 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-04 13:23:46",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 麦恩莉 方大同",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 13:24:53",
+    "action": "随机点歌",
+    "details": "歌曲: 好汉歌 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 13:24:56",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV1ThWWzXEG4/?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:36:51",
+    "action": "添加歌曲",
+    "details": "歌曲: Batcha - 歌手: 边伯贤 - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:37:27",
+    "action": "添加歌曲",
+    "details": "歌曲: Candy - 歌手: 边伯贤 - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:38:16",
+    "action": "添加歌曲",
+    "details": "歌曲: Only one - 歌手: BOA - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:38:45",
+    "action": "添加歌曲",
+    "details": "歌曲: thirsty - 歌手: aespa - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:39:04",
+    "action": "添加歌曲",
+    "details": "歌曲: 越来越不懂 - 歌手: 未知 - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:39:27",
+    "action": "添加歌曲",
+    "details": "歌曲: 试试看 - 歌手: sistar - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:39:58",
+    "action": "添加歌曲",
+    "details": "歌曲: what is love - 歌手: twice - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:40:46",
+    "action": "添加歌曲",
+    "details": "歌曲: grils never die - 歌手: Triples - 点歌人: 三人九首",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-07 21:41:20",
+    "action": "添加歌曲",
+    "details": "歌曲: bored - 歌手: 宁艺卓 - 点歌人: 三人九首",
+    "result": "成功"
   }
 ]
