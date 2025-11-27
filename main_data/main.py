@@ -1,8 +1,5 @@
 ###例行公事
-def main():
-    pass
-if __name__ == '__main__':
-    main() 
+
 ###
 
 # 导入模块
@@ -79,7 +76,7 @@ def view_history():
                     print("暂无历史记录")
                     return
                 
-                print("\n📜 操作历史记录 📜")
+                print("\n操作历史记录")
                 print("=" * 60)
                 for i, record in enumerate(history_data, 1):
                     print(f"{i}. [{record['timestamp']}] {record['action']}")
@@ -226,14 +223,14 @@ def execute_auto_jump(song):
     if not config['auto_jump_enabled']:
         return
     
-    print(f"\n⏰ 将在 {config['jump_delay']} 秒后自动跳转...")
+    print(f"\n将在 {config['jump_delay']} 秒后自动跳转...")
     time.sleep(config['jump_delay'])
     
     # 优先检查歌曲是否有URL，如果有则优先跳转URL
     song_url = song.get('url_list', '').strip() if song else ''
     if song_url:
         # 跳转到歌曲URL
-        print(f"🌐 跳转到歌曲URL: {song_url}")
+        print(f"跳转到歌曲URL: {song_url}")
         webbrowser.open(song_url)
         record_history("网页跳转", f"跳转到歌曲URL: {song_url}")
         return
@@ -241,7 +238,7 @@ def execute_auto_jump(song):
     # 如果没有歌曲URL，则根据配置的模式跳转
     if config['jump_mode'] == 'url' and config['custom_url']:
         # 跳转到自定义URL
-        print(f"🌐 跳转到: {config['custom_url']}")
+        print(f"跳转到: {config['custom_url']}")
         webbrowser.open(config['custom_url'])
         record_history("网页跳转", f"跳转到自定义URL: {config['custom_url']}")
         
@@ -260,7 +257,7 @@ def execute_auto_jump(song):
             encoded_query = urllib.parse.quote(search_query)
             bilibili_url = f"https://search.bilibili.com/all?keyword={encoded_query}"
             
-            print(f"🔍 跳转到B站搜索: {search_query}")
+            print(f"跳转到B站搜索: {search_query}")
             webbrowser.open(bilibili_url)
             record_history("网页跳转", f"跳转到B站搜索: {search_query}")
         else:
@@ -331,6 +328,7 @@ def save_songs(songs, playlist_id=None):
             return False
     else:
         # 保存到当前歌单
+        current_playlist_id = None
         current_playlist_id = config['current_playlist']
         file_path = config['playlists'][current_playlist_id]['file_path']
     
@@ -450,7 +448,7 @@ def display_song_info(song):
         print("没有找到有效的歌曲")
         return
     
-    print("\n🎵 随机点歌结果 🎵")
+    print("\n随机点歌结果")
     print("=" * 30)
     print(f"歌曲名: {song.get('song_name', '未知')}")
     print(f"歌手: {song.get('artist', '未知') or '未知'}")
@@ -487,12 +485,12 @@ def get_songs_statistics(songs):
 
 def display_statistics(statistics):
     """显示统计信息"""
-    print("\n📊 歌曲统计信息 📊")
+    print("\n歌曲统计信息")
     print("=" * 40)
     print(f"总歌曲数: {statistics['total_songs']}")
     print(f"有效歌曲: {statistics['valid_songs']}")
     print(f"无效歌曲: {statistics['invalid_songs']}")
-    print("\n👥 点歌人统计:")
+    print("\n点歌人统计:")
     for requester, count in statistics['requesters'].items():
         print(f"  {requester}: {count}首")
     print("=" * 40)
@@ -613,7 +611,7 @@ def modify_requester(songs):
 def manage_requesters(songs):
     """点歌人管理菜单"""
     while True:
-        print("\n🎤 点歌人管理 🎤")
+        print("\n点歌人管理 ")
         print("=" * 20)
         print("1. 增加点歌人")
         print("2. 删除点歌人")
@@ -632,7 +630,7 @@ def manage_requesters(songs):
         elif choice == '4':
             requesters = get_all_requesters(songs)
             if requesters:
-                print("\n📋 点歌人列表:")
+                print("\n点歌人列表:")
                 for i, requester in enumerate(requesters, 1):
                     print(f"{i}. {requester}")
             else:
@@ -653,7 +651,7 @@ def get_next_song_id(songs):
 
 def add_song(songs):
     """添加新歌曲"""
-    print("\n🎵 添加新歌曲 🎵")
+    print("\n添加新歌曲")
     print("=" * 20)
     
     song_id = get_next_song_id(songs)
@@ -668,7 +666,7 @@ def add_song(songs):
     # 显示当前点歌人列表
     requesters = get_all_requesters(songs)
     if requesters:
-        print("\n📋 当前点歌人列表:")
+        print("\n当前点歌人列表:")
         for i, requester in enumerate(requesters, 1):
             print(f"{i}. {requester}")
         print(f"{len(requesters) + 1}. 输入新点歌人")
@@ -724,7 +722,7 @@ def modify_song(songs):
         print("没有可修改的歌曲!")
         return songs
     
-    print("\n📝 修改歌曲信息 📝")
+    print("\n修改歌曲信息")
     print("=" * 25)
     
     # 显示歌曲列表
@@ -780,7 +778,7 @@ def modify_song(songs):
             elif mod_choice == '4':
                 requesters = get_all_requesters(songs)
                 if requesters:
-                    print("\n📋 当前点歌人列表:")
+                    print("\n当前点歌人列表:")
                     for i, requester in enumerate(requesters, 1):
                         print(f"{i}. {requester}")
                     print(f"{len(requesters) + 1}. 输入新点歌人")
@@ -846,7 +844,7 @@ def delete_song(songs):
         print("没有可删除的歌曲!")
         return songs
     
-    print("\n🗑️ 删除歌曲 🗑️")
+    print("\n删除歌曲")
     print("=" * 15)
     
     # 显示歌曲列表
@@ -882,7 +880,7 @@ def delete_song(songs):
 def manage_songs(songs):
     """歌曲管理菜单"""
     while True:
-        print("\n🎵 歌曲管理 🎵")
+        print("\n歌曲管理")
         print("=" * 15)
         print("1. 添加歌曲")
         print("2. 修改歌曲")
@@ -900,7 +898,7 @@ def manage_songs(songs):
             songs = delete_song(songs)
         elif choice == '4':
             if songs:
-                print("\n📋 所有歌曲列表:")
+                print("\n所有歌曲列表:")
                 for i, song in enumerate(songs, 1):
                     print(f"{i}. {song.get('song_name', '未知')} - {song.get('artist', '未知')} - {song.get('requested_by', '未知')}")
             else:
@@ -921,7 +919,7 @@ def switch_playlist():
         print("当前只有一个歌单，无法切换")
         return config, None
     
-    print("\n🎵 歌单切换 🎵")
+    print("\n歌单切换")
     print("=" * 20)
     print("当前歌单:", playlists[config['current_playlist']]['name'])
     print("\n可用歌单:")
@@ -965,7 +963,7 @@ def create_playlist():
     """创建空白歌单"""
     config = load_playlist_config()
     
-    print("\n🎵 创建空白歌单 🎵")
+    print("\n创建空白歌单")
     print("=" * 20)
     
     playlist_name = input("请输入歌单名称: ").strip()
@@ -1024,7 +1022,7 @@ def delete_playlist():
         print("至少需要保留一个歌单!")
         return config
     
-    print("\n🗑️ 删除歌单 🗑️")
+    print("\n删除歌单")
     print("=" * 15)
     print("当前歌单:", playlists[config['current_playlist']]['name'])
     print("\n可用歌单:")
@@ -1078,7 +1076,7 @@ def view_playlists():
     config = load_playlist_config()
     playlists = config['playlists']
     
-    print("\n📋 所有歌单 📋")
+    print("\n所有歌单")
     print("=" * 25)
     print(f"当前歌单: {playlists[config['current_playlist']]['name']}")
     print("\n歌单列表:")
@@ -1100,7 +1098,7 @@ def settings_menu():
         config = load_playlist_config()
         current_playlist = config['playlists'][config['current_playlist']]['name']
         
-        print(f"\n⚙️ 设置菜单 ⚙️ (当前歌单: {current_playlist})")
+        print(f"\n设置菜单 (当前歌单: {current_playlist})")
         print("=" * 30)
         print("1. 歌单管理")
         print("2. 自动网页跳转开关")
@@ -1130,9 +1128,9 @@ def auto_jump_settings_menu():
     while True:
         config = load_auto_jump_config()
         status = "✅ 启用" if config['auto_jump_enabled'] else "❌ 关闭"
-        mode = "🌐 跳转URL" if config['jump_mode'] == 'url' else "🔍 搜索跳转"
+        mode = "跳转URL" if config['jump_mode'] == 'url' else "搜索跳转"
         
-        print(f"\n🌐 自动网页跳转设置 🌐")
+        print(f"\n自动网页跳转设置")
         print("=" * 30)
         print(f"当前状态: {status}")
         print(f"跳转模式: {mode}")
@@ -1178,9 +1176,9 @@ def jump_mode_menu():
         config = load_auto_jump_config()
         current_mode = config['jump_mode']
         
-        print(f"\n🔧 跳转模式设置 🔧")
+        print(f"\n跳转模式设置")
         print("=" * 25)
-        print(f"当前模式: {'🌐 跳转URL' if current_mode == 'url' else '🔍 搜索跳转'}")
+        print(f"当前模式: {'跳转URL' if current_mode == 'url' else '搜索跳转'}")
         print("\n请选择模式:")
         print("1. 跳转URL")
         print("2. 跳转搜索界面")
@@ -1228,7 +1226,7 @@ def set_jump_delay():
     """设置跳转延时"""
     config = load_auto_jump_config()
     
-    print(f"\n⏰ 当前跳转延时: {config['jump_delay']}秒")
+    print(f"\n当前跳转延时: {config['jump_delay']}秒")
     print("请输入新的跳转延时 (1-60秒):")
     
     try:
@@ -1247,7 +1245,7 @@ def set_jump_delay():
 
 def import_external_playlist():
     """从外部已有歌单导入"""
-    print("\n🎵 从外部已有歌单导入 🎵")
+    print("\n从外部已有歌单导入")
     print("=" * 25)
     
     # 获取外部歌单文件路径
@@ -1344,12 +1342,12 @@ def duplicate_prevention_settings_menu():
     
     while True:
         status = "✅ 启用" if prevention_config['enabled'] else "❌ 关闭"
-        mode = "⏰ 时间窗口模式" if prevention_config['mode'] == 'time_window' else "❓ 未知模式"
+        mode = "时间窗口模式" if prevention_config['mode'] == 'time_window' else "❓ 未知模式"
         time_window = f"{prevention_config['time_window_hours']}小时{prevention_config['time_window_minutes']}分钟"
         reset_status = "✅ 是" if prevention_config['reset_on_all_played'] else "❌ 否"
         played_count = len(prevention_config['played_songs'])
         
-        print(f"\n🔄 防重复功能设置 🔄 (当前歌单: {config['playlists'][current_playlist_id]['name']})")
+        print(f"\n防重复功能设置 (当前歌单: {config['playlists'][current_playlist_id]['name']})")
         print("=" * 50)
         print(f"1. 功能状态: {status}")
         print(f"2. 模式: {mode}")
@@ -1387,7 +1385,7 @@ def duplicate_prevention_settings_menu():
                 
         elif choice == '3':
             # 设置时间窗口
-            print(f"\n⏰ 当前时间窗口: {prevention_config['time_window_hours']}小时{prevention_config['time_window_minutes']}分钟")
+            print(f"\n当前时间窗口: {prevention_config['time_window_hours']}小时{prevention_config['time_window_minutes']}分钟")
             print("请输入新的时间窗口设置:")
             
             try:
@@ -1423,7 +1421,7 @@ def duplicate_prevention_settings_menu():
             songs = load_songs()
             total_songs = len(filter_valid_songs(songs))
             played_count = len(prevention_config['played_songs'])
-            print(f"\n📊 播放统计:")
+            print(f"\n播放统计:")
             print(f"总歌曲数: {total_songs}")
             print(f"已播放歌曲: {played_count}")
             print(f"剩余歌曲: {total_songs - played_count}")
@@ -1433,12 +1431,12 @@ def duplicate_prevention_settings_menu():
             if not prevention_config['played_songs']:
                 print("暂无播放记录")
             else:
-                print("\n📜 播放记录:")
+                print("\n播放记录:")
                 print("=" * 60)
-                for i, record in enumerate(prevention_config['played_songs'][-50:], 1):  # 显示最近50条
+                for i, record in enumerate(prevention_config['played_songs'][-10:], 1):  # 显示最近10条
                     print(f"{i}. [{record['play_time']}] {record['song_name']} (ID: {record['song_id']})")
-                if len(prevention_config['played_songs']) > 50:
-                    print(f"... 还有 {len(prevention_config['played_songs']) - 50} 条记录")
+                if len(prevention_config['played_songs']) > 10:
+                    print(f"... 还有 {len(prevention_config['played_songs']) - 10} 条记录")
                     
         elif choice == '7':
             # 手动重置播放记录
@@ -1463,7 +1461,7 @@ def duplicate_prevention_settings_menu():
 def playlist_management_menu():
     """歌单管理菜单"""
     while True:
-        print("\n🎵 歌单管理 🎵")
+        print("\n歌单管理")
         print("=" * 15)
         print("1. 从外部已有歌单导入")
         print("2. 创建空白歌单")
@@ -1496,7 +1494,7 @@ def playlist_management_menu():
 
 def main():
     """主函数"""
-    print("🎵 随机点歌系统 🎵")
+    print("随机点歌系统")
     print("正在加载歌曲列表...")
     
     songs = load_songs()
@@ -1565,3 +1563,6 @@ def main():
 if __name__ == "__main__":
     main()
     input("\n按回车键退出程序...")
+
+if __name__ == '__main__':
+    main() 

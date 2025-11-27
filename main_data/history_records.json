@@ -1990,5 +1990,143 @@
     "action": "添加歌曲",
     "details": "歌曲: bored - 歌手: 宁艺卓 - 点歌人: 三人九首",
     "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-11 15:54:02",
+    "action": "添加歌曲",
+    "details": "歌曲: You Gotta Move - 歌手: Mississippi Fred McDowell - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:11:56",
+    "action": "修改歌曲",
+    "details": "修改歌名: 物理魔法师马修主题曲 -> 物理魔法师马修主题曲",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:12:51",
+    "action": "修改歌曲",
+    "details": "修改歌手: 徐梦圆 -> ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:16:01",
+    "action": "修改歌曲",
+    "details": "修改外链URL:  -> 5",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:17:41",
+    "action": "修改歌曲",
+    "details": "修改歌名: 不乱不破 -> 不乱不破",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:19:05",
+    "action": "修改歌曲",
+    "details": "修改歌名: Harry hare -> Harry hare",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-12 17:22:22",
+    "action": "添加歌曲",
+    "details": "歌曲: ON MY OWN - 歌手: UK - 点歌人: PRANA",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-14 13:20:41",
+    "action": "随机点歌",
+    "details": "歌曲: 试试看 - 歌手: sistar",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-14 13:20:45",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: 试试看 sistar",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-14 13:25:41",
+    "action": "随机点歌",
+    "details": "歌曲: thirsty - 歌手: aespa",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-14 13:25:44",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: thirsty aespa",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-17 13:24:48",
+    "action": "随机点歌",
+    "details": "歌曲: Only one - 歌手: BOA",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-17 13:24:51",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: Only one BOA",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-18 06:24:04",
+    "action": "添加歌曲",
+    "details": "歌曲: 恭喜发财 - 歌手: 刘德华 - 点歌人: 电管",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-19 13:24:22",
+    "action": "随机点歌",
+    "details": "歌曲: call of silence - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-19 13:24:26",
+    "action": "网页跳转",
+    "details": "跳转到B站搜索: call of silence",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-20 13:24:20",
+    "action": "随机点歌",
+    "details": "歌曲: 不问别离 - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-20 13:24:23",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV17h4y1s7xx/?spm_id_from=333.788.recommend_more_video.30",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-20 16:52:21",
+    "action": "删除歌曲",
+    "details": "歌曲: 不问别离 - 歌手:  - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-20 16:58:29",
+    "action": "添加歌曲",
+    "details": "歌曲: OMFG - Hello - 歌手: 未知 - 点歌人: “10086”",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-20 21:47:28",
+    "action": "随机点歌",
+    "details": "歌曲: counting stars - 歌手: ",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-21 13:20:26",
+    "action": "随机点歌",
+    "details": "歌曲: 烟花易冷 - 歌手: 周杰伦",
+    "result": "成功"
+  },
+  {
+    "timestamp": "2025-11-21 13:20:30",
+    "action": "网页跳转",
+    "details": "跳转到歌曲URL: https://www.bilibili.com/video/BV12o4y1N7kc/?spm_id_from=333.337.search-card.all.click",
+    "result": "成功"
   }
 ]
